@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int counter,total,n;
+    printf("enter a number\n");
+    scanf("%d",&n);
+    counter=1;
+    total=0;
+    while(counter<=n){
+        total=total+counter;
+        counter++;
+    }
+    printf("total=%d",total);
+    return 0;
+}

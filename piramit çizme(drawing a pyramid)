@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n;
+    printf("satir sayisi gir\n");
+    scanf("%d",&n);
+    for(int satir=1;satir<=n;satir++){
+            for(int bosluk=0;bosluk<n-satir;bosluk++){
+                printf(" ");
+            }
+            for(int yildiz=0;yildiz<2*satir-1;yildiz++){
+                printf("*");
+            }
+        printf("\n");
+    }
+    return 0;
+}

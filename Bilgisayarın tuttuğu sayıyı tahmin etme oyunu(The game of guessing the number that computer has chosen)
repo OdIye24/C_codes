@@ -1,3 +1,0 @@
-Bilgisayar 1'den 100'e kadar bir sayı tutacak ve kişi bu sayıyı tahmin etmeye çalışacak. Eğer tahmini bilgisayarın tuttuğu sayıdan büyükse veya küçükse bilgisayar bu ipucunu verecek.Tahmin doğru olduğunda ise kaçıncı denemede doğru tahmini yaptığımızı söyleyecek.
-
-The computer chooses a number from 1 to 100. The user tries to find this number. If the guess is greater or less than the chosen number, the program suggests that the user should enter a new number according to this information. If the guess is true,the program  says the number of attempts.

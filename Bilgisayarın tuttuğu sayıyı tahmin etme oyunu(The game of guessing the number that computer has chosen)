@@ -6,29 +6,28 @@ int main()
     srand(time(NULL));
     int i=1+rand()%100;
     int x;
-    printf("1 ile 100 arasinda tuttugum sayiyi tahmin et\n");
+    printf("guess the number that I have chosen from 1 to 100\n");
     scanf("%d",&x);
     while(x<1||x>100){
-    printf("gecersiz bir deger girdin\nyeni bir deger gir\n");
-    int y;
+    printf("the number that you have entered is invalid\nenter a new number from 1 to 100\n");
     scanf("%d",&x);
     }
-    int deneme=1;
+    int attempt=1;
     while(x>=1&&x<=100){
 
         if(x==i){
-            printf("tebrikler %d. denemede basarili oldun!",deneme);
+            printf("congratulations,you could guess the number at %d. attempt!",attempt);
             break;
         }
         else if(x<i){
-            printf("tahminin yanlis tekrar dene\nbiraz daha buyuk bir sayi sec");
+            printf("your guess is wrong,please enter a greater number\n");
             scanf("%d",&x);
-            deneme++;
+            attempt++;
         }
         else if(x>i){
-            printf("tahminin yanlis tekrar dene\nbiraz daha kucuk bir sayi sec");
+            printf("your guess is wrong,please enter a smaller number\n");
             scanf("%d",&x);
-            deneme++;
+            attempt++;
         }
     }
 

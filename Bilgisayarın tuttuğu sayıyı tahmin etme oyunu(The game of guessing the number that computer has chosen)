@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    srand(time(NULL));
+    int i=1+rand()%100;
+    int x;
+    printf("1 ile 100 arasinda tuttugum sayiyi tahmin et\n");
+    scanf("%d",&x);
+    while(x<1||x>100){
+    printf("gecersiz bir deger girdin\nyeni bir deger gir\n");
+    int y;
+    scanf("%d",&x);
+    }
+    int deneme=1;
+    while(x>=1&&x<=100){
+
+        if(x==i){
+            printf("tebrikler %d. denemede basarili oldun!",deneme);
+            break;
+        }
+        else if(x<i){
+            printf("tahminin yanlis tekrar dene\nbiraz daha buyuk bir sayi sec");
+            scanf("%d",&x);
+            deneme++;
+        }
+        else if(x>i){
+            printf("tahminin yanlis tekrar dene\nbiraz daha kucuk bir sayi sec");
+            scanf("%d",&x);
+            deneme++;
+        }
+    }
+
+    return 0;
+}
